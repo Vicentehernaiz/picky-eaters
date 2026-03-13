@@ -1,0 +1,263 @@
+/* ============================================================
+   PICKY EATERS — Design Tokens (CSS Custom Properties)
+   tokens.css — Import in index.css or App.css
+   ============================================================ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+  /* ── Colors: Backgrounds ─────────────────── */
+  --color-bg-main:       #FAF9F6;
+  --color-bg-white:      #FFFFFF;
+  --color-bg-contrast:   #ECEAE4;
+
+  /* ── Colors: Accent / Brand ─────────────── */
+  --color-accent-orange:    #FE8F20;
+  --color-accent-yellow:    #FFD400;
+  --color-accent-yellow-2:  #FFBB00;
+  --color-accent-green:     #0D735A;
+  --color-accent-lime:      #CCDD20;
+
+  /* ── Colors: Text ────────────────────────── */
+  --color-text-dark:    #1A1A1A;
+  --color-text-body:    #636363;
+  --color-text-muted:   #9B9B9B;
+  --color-text-inverse: #FFFFFF;
+
+  /* ── Colors: Semantic States ─────────────── */
+  --color-love:     #0D735A;
+  --color-like:     #CCDD20;
+  --color-neutral:  #ECEAE4;
+  --color-dislike:  #FFBB00;
+  --color-hate:     #FE8F20;
+  --color-allergy:  #D93025;
+
+  /* ── Colors: Compatibility ───────────────── */
+  --color-compat-good:    #0D735A;
+  --color-compat-warning: #FFBB00;
+  --color-compat-bad:     #D93025;
+
+  /* ── Colors: UI Utility ─────────────────── */
+  --color-border:   #ECEAE4;
+  --color-shadow:   rgba(0, 0, 0, 0.08);
+  --color-overlay:  rgba(0, 0, 0, 0.40);
+
+  /* ── Typography: Font Families ───────────── */
+  --font-display: 'EB Garamond', Georgia, serif;
+  --font-ui:      'Work Sans', system-ui, sans-serif;
+  --font-body:    'Open Sans', system-ui, sans-serif;
+
+  /* ── Typography: Font Sizes ──────────────── */
+  --text-h1:      36px;
+  --text-h2:      32px;
+  --text-h3:      20px;
+  --text-h4:      17px;
+  --text-body-l:  16px;
+  --text-body-m:  14px;
+  --text-body-s:  12px;
+  --text-label:   11px;
+  --text-button:  15px;
+  --text-caption: 11px;
+
+  /* ── Typography: Font Weights ────────────── */
+  --weight-light:     300;
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-extrabold: 800;
+
+  /* ── Typography: Line Heights ────────────── */
+  --leading-tight:   1.2;
+  --leading-snug:    1.35;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.65;
+
+  /* ── Typography: Letter Spacing ─────────── */
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide:   0.05em;
+  --tracking-wider:  0.08em;
+
+  /* ── Spacing ─────────────────────────────── */
+  --space-0:  0px;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* Semantic spacing */
+  --page-padding:   20px;
+  --section-gap:    32px;
+  --card-padding:   16px;
+  --card-gap:       12px;
+  --nav-height:     60px;
+  --header-height:  56px;
+
+  /* ── Border Radius ───────────────────────── */
+  --radius-none:   0px;
+  --radius-xs:     4px;
+  --radius-sm:     8px;
+  --radius-md:     12px;
+  --radius-lg:     16px;
+  --radius-xl:     24px;
+  --radius-xxl:    32px;
+  --radius-full:   9999px;
+  --radius-card:   16px;
+  --radius-button: 12px;
+  --radius-input:  10px;
+  --radius-avatar: 9999px;
+  --radius-tag:    9999px;
+
+  /* ── Shadows ─────────────────────────────── */
+  --shadow-none:   none;
+  --shadow-xs:     0 1px 2px rgba(0,0,0,0.06);
+  --shadow-sm:     0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md:     0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg:     0 8px 32px rgba(0,0,0,0.12);
+  --shadow-card:   0 2px 12px rgba(0,0,0,0.08);
+  --shadow-modal:  0 16px 64px rgba(0,0,0,0.16);
+  --shadow-button: 0 4px 12px rgba(254,143,32,0.30);
+
+  /* ── Transitions ─────────────────────────── */
+  --transition-fast:   150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow:   400ms ease;
+  --transition-spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Z-Index ─────────────────────────────── */
+  --z-base:     0;
+  --z-raised:   10;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+  --z-tooltip:  600;
+
+  /* ── Icon Sizes ──────────────────────────── */
+  --icon-xs: 16px;
+  --icon-sm: 20px;
+  --icon-md: 24px;
+  --icon-lg: 32px;
+  --icon-xl: 40px;
+}
+
+/* ── Base Reset & Defaults ──────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-m);
+  line-height: var(--leading-normal);
+  color: var(--color-text-body);
+  background-color: var(--color-bg-main);
+}
+
+/* ── Typography Utility Classes ─────────────── */
+.text-h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: var(--weight-extrabold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-accent-orange);
+}
+
+.text-h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.01em;
+  color: var(--color-accent-orange);
+}
+
+.text-h3 {
+  font-family: var(--font-ui);
+  font-size: var(--text-h3);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-snug);
+  color: var(--color-accent-orange);
+}
+
+.text-h4 {
+  font-family: var(--font-ui);
+  font-size: var(--text-h4);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-snug);
+  color: var(--color-text-dark);
+}
+
+.text-body-l {
+  font-family: var(--font-body);
+  font-size: var(--text-body-l);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-text-body);
+}
+
+.text-body-m {
+  font-family: var(--font-body);
+  font-size: var(--text-body-m);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-text-body);
+}
+
+.text-body-s {
+  font-family: var(--font-body);
+  font-size: var(--text-body-s);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-normal);
+  color: var(--color-text-body);
+}
+
+.text-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-label);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-body);
+}
+
+.text-button {
+  font-family: var(--font-ui);
+  font-size: var(--text-button);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: 0.01em;
+  color: var(--color-text-inverse);
+}
+
+.text-caption {
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: var(--weight-regular);
+  font-style: italic;
+  line-height: var(--leading-normal);
+  color: var(--color-text-muted);
+}
